@@ -57,7 +57,7 @@ app.get('/gen', async (req, res) => {
     try {
         const stream = await queryFLUX1Dev({ "inputs": prompt });
         const filename = `generated_prompt_image_FLUX1Dev.png`;
-        const cacheFolderPath = path.join(__dirname, 'cache');
+        const cacheFolderPath = path.join('/tmp', 'cache');
 
         // Create cache folder if it doesn't exist
         if (!fs.existsSync(cacheFolderPath)) {
