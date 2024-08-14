@@ -22,7 +22,7 @@ app.use(express.json());
 
 // Optimize fetch calls with timeout handling
 async function fetchWithTimeout(resource, options = {}) {
-    const { timeout = 70000 } = options; // Set a timeout (7p seconds default)
+    const { timeout = 100000 } = options; // Set a timeout (70 seconds default)
 
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeout);
