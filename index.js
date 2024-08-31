@@ -43,7 +43,7 @@ async function fetchWithTimeout(resource, options = {}) {
 async function queryModel(model, data) {
     let url;
     const headers = {
-        Authorization: "Bearer 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",
+        Authorization: "Bearer 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",
         "Content-Type": "application/json",
     };
 
